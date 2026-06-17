@@ -17,17 +17,15 @@ public class Calculator {
             case '*' -> result = num1 * num2;
             case '/' -> {
                 if (num2 == 0) {
-                    System.out.println("0으로 나눌 수 없습니다.");
-                    return;
+                    throw new ArithmeticException("0으로 나눌 수 없습니다.");
                 }
                 result = num1 / num2;
             }
-            default -> {
-                System.out.println("지원하지 않는 연산자입니다.");
-                return;
+            default -> throw new IllegalArgumentException("지원하지 않는 연산자입니다.");
             }
+
+            return result;
         }
 
     }
 
-}
