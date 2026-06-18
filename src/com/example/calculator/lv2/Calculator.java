@@ -32,5 +32,10 @@ public class Calculator {
             return results;
     }
 
+
+    public void removeResult() {
+        results.remove(0);
+    }
+
     }
 
