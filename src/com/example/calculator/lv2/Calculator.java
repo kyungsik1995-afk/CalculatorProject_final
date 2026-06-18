@@ -1,4 +1,4 @@
-package com.example.calculator;
+package com.example.calculator.lv2;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +24,7 @@ public class Calculator {
             default -> throw new IllegalArgumentException("지원하지 않는 연산자입니다.");
             }
 
+            results.add(result);
             return result;
         }
 
