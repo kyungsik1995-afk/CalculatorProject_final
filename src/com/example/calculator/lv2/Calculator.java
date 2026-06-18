@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Calculator {
 
-    public List<Integer> results = new ArrayList<>();
+    private List<Integer> results = new ArrayList<>();
 
     public Integer caculate(int num1, int num2, char operator) {
 
