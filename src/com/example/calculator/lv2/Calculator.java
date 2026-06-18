@@ -28,7 +28,7 @@ public class Calculator {
             return result;
         }
 
-        public List,Integer> getResults() {
+        public List<Integer> getResults() {
             return results;
     }
 

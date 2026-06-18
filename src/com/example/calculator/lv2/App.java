@@ -32,8 +32,10 @@ public class App {
             char operator = sc.next().charAt(0);
 
             Integer result = calculator.caculate(num1, num2, operator);
-
             System.out.println("결과: " + result);
+
+            System.out.println("현재 저장된 결과들: " + calculator.getResults());
+
             System.out.println("종료를 원하면 exit / 계속하려면 아무 글자 입력");
             exit = sc.next();
 
